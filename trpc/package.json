@@ -1,0 +1,24 @@
+{
+  "name": "example-trpc",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run server & npm run client",
+    "server": "tsx watch src/server/server.ts",
+    "client": "vite --open"
+  },
+  "dependencies": {
+    "@hono/node-server": "*",
+    "@hono/trpc-server": "*",
+    "@trpc/client": "*",
+    "@trpc/server": "*",
+    "hono": "*",
+    "zod": "*"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "tsx": "*",
+    "typescript": "*",
+    "vite": "*"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "example-graphql",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run generate && (npm run server & npm run client)",
+    "server": "tsx watch src/server/server.ts",
+    "client": "vite --open",
+    "generate": "graphql-codegen --config codegen.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "*",
+    "graphql": "*",
+    "graphql-request": "*",
+    "graphql-yoga": "*",
+    "hono": "*"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "*",
+    "@graphql-codegen/typescript": "*",
+    "@graphql-codegen/typescript-operations": "*",
+    "@types/node": "*",
+    "tsx": "*",
+    "typescript": "*",
+    "vite": "*"
+  }
+}

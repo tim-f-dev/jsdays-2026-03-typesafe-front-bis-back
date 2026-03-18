@@ -1,0 +1,25 @@
+{
+  "name": "example-orpc",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run server & npm run client",
+    "server": "tsx watch src/server/server.ts",
+    "client": "vite --open"
+  },
+  "dependencies": {
+    "@hono/node-server": "*",
+    "@orpc/client": "*",
+    "@orpc/openapi": "*",
+    "@orpc/server": "*",
+    "@orpc/zod": "*",
+    "hono": "*",
+    "zod": "*"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "tsx": "*",
+    "typescript": "*",
+    "vite": "*"
+  }
+}
