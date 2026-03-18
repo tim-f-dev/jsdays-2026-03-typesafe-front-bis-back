@@ -69,8 +69,8 @@ export const TALK_QUERY = gql`
 //
 // Uncomment und ergänze die fehlenden Felder (name, bio, company):
 // export const SPEAKERS_QUERY = gql`
-//   query GetSpeakers {
-//     speakers {
+//   query GetSpeakers($id: ID!) {
+//     speaker(id: $id) {
 //       id
 //     }
 //   }
