@@ -6,6 +6,12 @@
 npm run dev
 ```
 
+> **Windows:** `npm run dev` startet Server und Client mit `&`, was unter Windows nicht funktioniert. Starte stattdessen in zwei separaten Terminals:
+> ```bash
+> npm run server   # Terminal 1
+> npm run client   # Terminal 2
+> ```
+
 App läuft unter [http://localhost:5101](http://localhost:5101).
 
 Hilfreiche URLs:
